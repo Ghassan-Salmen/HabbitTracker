@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/my_history_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/primary_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="My History"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+        <Button
+            android:id="@+id/clear_history_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clear History"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/secondary_color"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/primary_color"/>
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/all_history_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/my_history_rl"
+        android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/no_history_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="there is nothing to show"
+        android:textSize="30dp"
+        android:visibility="gone"
+        />
+
+
+
+
+
+
+</RelativeLayout>

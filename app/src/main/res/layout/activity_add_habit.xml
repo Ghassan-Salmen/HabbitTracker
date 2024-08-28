@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddHabitActivity"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="Habit"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/habit_text"
+        />
+
+    <EditText
+        android:id="@+id/habit_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/habit_text"
+        android:hint="enter your habit" />
+
+    <TextView
+        android:layout_below="@+id/habit_et"
+        android:id="@+id/habit_duration_text"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="Habit Duration"
+        android:layout_marginBottom="20dp"
+        />
+
+    <EditText
+        android:id="@+id/habit_duration_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/habit_duration_text"
+        android:layout_marginBottom="20dp"
+        android:hint="enter habit duration in minutes"
+        android:inputType="number" />
+
+    <Switch
+        android:id="@+id/increase_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/habit_duration_et"
+
+        android:checked="true"
+        android:padding="10dp"
+        android:text="increase:"
+        android:textSize="18dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/habit_score_et"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/habit_duration_et"
+        android:layout_alignParentEnd="true"
+        android:hint="score of this habit"
+        android:inputType="number" />
+
+    <Button
+
+        android:id="@+id/add_habit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Add habit" />
+
+
+
+
+</RelativeLayout>

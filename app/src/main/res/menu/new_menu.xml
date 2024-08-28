@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.bringit.AllOrdersActivity">
+    <item
+        android:id="@+id/history_item"
+        android:title="History"
+        />
+    <item
+        android:id="@+id/clear_score_item"
+        android:title="clear my score"
+        />
+</menu>
